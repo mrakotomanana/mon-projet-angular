@@ -1,0 +1,26 @@
+<div class="text-center">
+  <form class="form-signin" (ngSubmit)="connect()">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+    <label for="pseudo" class="sr-only">Email address</label>
+    <input type="text" id="pseudo" name="pseudo" class="form-control" placeholder="Pseudo" [(ngModel)]="personne.pseudo" required #pseudo="ngModel">
+    
+    <label for="mdp" class="sr-only">Password</label>
+    <input type="password" id="mdp" name="mdp" class="form-control" placeholder="Password" [(ngModel)]="personne.password" required #mdp="ngModel">
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+  </form>
+  <div class="alert alert-info">
+    {{ personne | json }}
+    <p>
+      
+    </p>
+  </div>
+</div>
+

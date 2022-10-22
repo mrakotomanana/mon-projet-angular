@@ -1,0 +1,22 @@
+<div class="alert alert-info">
+    <!-- <ul>
+        <app-fils>
+            <span prenomContent> John </span>
+            <span nomContent> Wick </span>
+            <a href="wick">Wick</a>
+        </app-fils>
+        <app-fils>
+            <span prenomContent> Jack </span>
+            <span nomContent> Shephard </span>
+            <a href="shephard">Shephard</a>
+        </app-fils>
+        <app-fils>
+            <span prenomContent> James </span>
+            <span nomContent> Ford </span>
+            <a href="ford">Ford</a>
+        </app-fils>
+    </ul> -->
+    <app-fils [ordre]="'test'" [villeNaissance]="'france'"></app-fils>
+    <input type="text" [(ngModel)]="name">
+    <p class="lead">{{ name }}</p>
+</div>
